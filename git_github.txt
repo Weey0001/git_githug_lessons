@@ -73,3 +73,31 @@ $git log --oneline
 _to change the last commitment name:
 $git commit -m "<new_commit_name_for_the_last_commit>" --amend
 
+_ to  see all the changing and change all the out see:
+$git rebase -i --root
+Colon key + [X] key to quit
+
+_to jump to a specific commit:
+$git reset <id_commit>
+
+>>>>> Branch
+
+we can setup a branch to copy the main branch to get acces to a copy that we can make change without making change to the main branch and merge then together after test.
+
+_to create new branch:
+$git branch <new_branch_name>
+
+_to check out all branch:
+$git branch
+
+_to switch betwen branch:
+$git switch <branch_name>
+
+_to merge branch:
+$git merge -m "Merge back to main" <branch_non_main>
+
+_to delet branch:
+$git branch -d <branch_name>
+
+_to switch form main branch and create the new one:
+$git switch -c <new_name_for_new_branch>
