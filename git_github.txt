@@ -1,0 +1,75 @@
+_entering procedure
+$git config --global user.name "<user_name>"
+$git config --global user.email "<user_name>"
+$git config --global init.default branch main
+
+_to use git: 
+$cd <path_file>
+
+_initialise git for fowarding repositories
+$git init
+
+_command to check folder in repositories
+$git status
+
+_track files 
+$git add <file_name>
+when you track a file, it's stocking in a cache memory.
+
+_track all files
+$git add --all
+$git add .
+
+_to remove a tracking file:
+$git rm --cached <file>
+
+_to remove a file:
+$git rm <file_name>
+
+#if the file have being commited, and remove, you can show the status of the current tracked repository and restore it:
+$git restore <file_name>
+
+_ignore a file:
+create a .gitignore file
+ex: *.txt
+
+_commitement:
+is use for creating a sauveguarde in the memories of all the changement for the last commitement
+
+_create a commitment:
+$git commit -m "<a title for the commit>" 
+
+_get the diffrencies with the last commit
+$git diff
+
+after changement, you add to put the file in staging, use the command $git add <file_name>.
+the file is on staging before commitment
+
+******NB:
+you have 3 environement:
+_working file
+_staging
+_commitment for the register
+
+by adding file to the staging you can remove them form it:
+$git remove --staged <file_name>
+
+here if you commit in regular manner, the file will not be commited.
+we can bypass it by :
+$git commit -a -m "<some_title_for_the_commitment>"
+
+_change file name:
+$git mv "<current_name>""<new_name>"
+
+_to log the register:
+$git log
+
+_to get more detailed about the registored:
+$git log -p
+
+_to log in oneline:
+$git log --oneline
+
+_to change the last commitment name:
+$git commit -m "<new_commit_name_for_the_last_commit>" --amend
+
