@@ -101,3 +101,14 @@ $git branch -d <branch_name>
 
 _to switch form main branch and create the new one:
 $git switch -c <new_name_for_new_branch>
+
+++++ github
+
+_to get all history from github
+$git fetch
+
+_to merge it to your project:
+$git merge
+
+_to do fetch and merge both together: 
+$git pull
