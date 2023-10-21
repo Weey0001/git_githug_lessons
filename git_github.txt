@@ -38,7 +38,7 @@ is use for creating a sauveguarde in the memories of all the changement for the 
 
 _create a commitment:
 $git commit -m "<a title for the commit>" 
-
+"m" for massage
 _get the diffrencies with the last commit
 $git diff
 
